@@ -49,13 +49,13 @@ DatabaseDisconnect
     
 # checked: 8.0 ok
 MainMenu    [Arguments]    ${menu}
-	Click Link				xpath=//div[@id='oe_main_menu_placeholder']/ul/li/a[@data-menu='${menu}']
+	Click Link				xpath=//div[@id='oe_main_menu_placeholder']/ul/li/a[descendant::span/text()[normalize-space()='${menu}']]
 	Wait Until Page Contains Element	xpath=//div[contains(@class, 'oe_secondary_menus_container')]/div[contains(@class, 'oe_secondary_menu') and not(contains(@style, 'display: none'))]	
 	ElementPostCheck
 
 # checked: 8.0 ok
 SubMenu    [Arguments]    ${menu}
-    Click Link				xpath=//td[contains(@class,'oe_leftbar')]//ul/li/a[@data-menu='${menu}']
+    Click Link				xpath=//td[contains(@class,'oe_leftbar')]//ul/li/a[descendant::span/text()[normalize-space()='${menu}']]
     Wait Until Page Contains Element	xpath=//div[contains(@class,'oe_view_manager_body')]
 
 # checked: 8.0 ok

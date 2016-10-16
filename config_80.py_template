@@ -7,7 +7,7 @@ SELENIUM_DELAY = 0
 
 # How long a "Wait Until ..." command should wait
 SELENIUM_TIMEOUT = 20
-BROWSER = "ff"
+BROWSER = "gc"
 Marionette= False
 
 # Odoo

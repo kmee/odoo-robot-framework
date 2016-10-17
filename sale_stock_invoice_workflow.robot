@@ -21,9 +21,10 @@ Create Sale Order
 	Button	sale.order.line	   oe_form_button_save_and_close
 	NotebookPage    Other Information
 	Select-Option    sale.order	picking_policy	Deliver all products at once
+	Select-Option    sale.order	order_policy	On Delivery Order
     Capture Page Screenshot
 	Button	sale.order	   oe_form_button_save
- 	Capture Page Screenshot
+	Capture Page Screenshot
 
 Process Sale Order
 	Button    sale.order    action_button_confirm
